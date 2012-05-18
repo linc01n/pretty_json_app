@@ -5,5 +5,5 @@
 $(document).ready ()->
     $('#convert').click (event) ->
         json = $('#input').value
-        $.get "/pretty", {input: json}, (data)->
+        $.post "/pretty", {input: json}, (data)->
             $('#output').html data
