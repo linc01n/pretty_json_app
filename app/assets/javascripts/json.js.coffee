@@ -4,6 +4,6 @@
 
 $(document).ready ()->
     $('#convert').click (event) ->
-        json = $('#input').value
+        json = $('#input').val()
         $.post "/pretty", {input: json}, (data)->
             $('#output').html data
