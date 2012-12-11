@@ -57,4 +57,9 @@ Json::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
   post 'pretty' => "json#pretty"
   root :to => "json#index"
+
+  get '/mu-37fffdd3-017f6a91-b527ef47-72e6ad20' do
+    '42'
+  end
+
 end
